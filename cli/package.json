@@ -1,0 +1,25 @@
+{
+  "name": "deref-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bin/index.js",
+  "bin": {
+    "deref": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gouravkhunger/deref.git"
+  },
+  "author": "Gourav Khunger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gouravkhunger/deref/issues"
+  },
+  "homepage": "https://github.com/gouravkhunger/deref#readme",
+  "dependencies": {
+    "yargs": "^17.6.0"
+  }
+}
