@@ -28,7 +28,7 @@ const deref = async (link) => {
   return response.headers.location || link;
 };
 
-app.get('/api', async (req, res) => {
+app.post('/api', async (req, res) => {
   let link = req.body && req.body.link;
 
   if (link === null || link === undefined || typeof link !== 'string' || link === '') {
