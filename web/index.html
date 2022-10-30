@@ -1,1 +1,31 @@
-Web interface is under construction. Please use the CLI/API in the meantime!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="A Simple Web interface to find a URL's redirection path without opening it." />
+  <meta property="og:description" content="A Simple Web interface to find a URL's redirection path without opening it." />
+  <meta name="twitter:description" content="A Simple Web interface to find a URL's redirection path without opening it." />
+  <meta name="twitter:creator" content="@gourav_khunger" />
+
+  <link rel="canonical" href="https://deref.gouravkhunger.me" />
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Deref by Gourav Khunger</title>
+</head>
+<body>
+  <main>
+    <form onsubmit="return false">
+      <input id="url-input" name="url" placeholder="Enter a URL" />
+      <button id="submit" type="submit">Go!</button>
+      <pre id="response"></pre>
+    </form>
+
+    <a href="https://github.com/gouravkhunger/deref" target="_blank">GitHub ></a>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
