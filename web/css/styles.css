@@ -1,0 +1,6 @@
+form {
+  transform: scale(1.25);
+  transform-origin: 0 0;
+  overflow-x: hidden;
+  margin-bottom: 20px;
+}

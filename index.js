@@ -28,6 +28,9 @@ const deref = async (link) => {
   return response.headers.location || link;
 };
 
+// serve files from the `web/` folder
+app.use('/', express.static('web', { extensions: ['html'] }));
+
 app.post('/api', async (req, res) => {
   let link = req.body && req.body.link;
 
