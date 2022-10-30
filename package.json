@@ -1,16 +1,13 @@
 {
   "name": "deref",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple API, web, and CLI interface to find a URL's redirection path without opening it.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gouravkhunger/deref.git"
   },
-  "author": "Gourav Khunger",
+  "author": "Gourav Khunger <gouravkhunger18@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gouravkhunger/deref/issues"
