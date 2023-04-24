@@ -1,0 +1,9 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+app_name: "Deref"
+micros:
+  - name: deref
+    src: .
+    engine: nodejs16
+    primary: true
+    public: true

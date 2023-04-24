@@ -4,7 +4,7 @@ A simple Web, API, and CLI interface to find a URL's redirection path without ma
 
 ## Web
 
-The web interace is available at https://deref.gouravkhunger.me.
+The web interace is available at https://deref.gourav.sh.
 
 ## CLI
 
@@ -21,7 +21,7 @@ $ deref --help
 
 Usage: deref [options]
 
-CLI interface for https://deref.gouravkhunger.me
+CLI interface for https://deref.gourav.sh
 
 Options:
   -v, --version       output the version number
@@ -33,29 +33,29 @@ Options:
 There is only one required option: `-u`/`--url`. If the input does not have a url scheme, `http://` is used by default.
 
 ```shell
-$ deref -u link.gouravkhunger.me/github
+$ deref -u l.gourav.sh/github
 
-Start url: http://link.gouravkhunger.me/github
+Start url: http://l.gourav.sh/github
 Final url: https://github.com/gouravkhunger
 
 Found 2 redirects:
-0 — http://link.gouravkhunger.me/github
-1 — https://link.gouravkhunger.me/github
+0 — http://l.gourav.sh/github
+1 — https://l.gourav.sh/github
 2 — https://github.com/gouravkhunger
 ```
 
 You may pass in the `-j` or `--json` flag to obtain raw json response for the redirection log:
 
 ```shell
-$ deref -u link.gouravkhunger.me/github -j
+$ deref -u l.gourav.sh/github -j
 
 {
   redirect_count: 2,
-  start_url: 'http://link.gouravkhunger.me/github',
+  start_url: 'http://l.gourav.sh/github',
   final_url: 'https://github.com/gouravkhunger',
   route_log: [
-    'http://link.gouravkhunger.me/github',
-    'https://link.gouravkhunger.me/github',
+    'http://l.gourav.sh/github',
+    'https://l.gourav.sh/github',
     'https://github.com/gouravkhunger'
   ]
 }
@@ -63,19 +63,19 @@ $ deref -u link.gouravkhunger.me/github -j
 
 ## API
 
-The API endpoint accepts `POST` requests at https://deref.gouravkhunger.me/api. The only required `body` parameter required to be passed is `link`.
+The API endpoint accepts `POST` requests at https://deref.gourav.sh/api. The only required `body` parameter required to be passed is `link`.
 
 ```shell
-curl -d "link=link.gouravkhunger.me/github" https://deref.gouravkhunger.me/api
+curl -d "link=l.gourav.sh/github" https://deref.gourav.sh/api
 
 # Formatted for readability
 {
   "redirect_count": 2,
-  "start_url": "http://link.gouravkhunger.me/github",
+  "start_url": "http://l.gourav.sh/github",
   "final_url": "https://github.com/gouravkhunger",
   "route_log": [
-    "http://link.gouravkhunger.me/github",
-    "https://link.gouravkhunger.me/github",
+    "http://l.gourav.sh/github",
+    "https://l.gourav.sh/github",
     "https://github.com/gouravkhunger"
   ]
 }

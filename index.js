@@ -1,7 +1,7 @@
 const axios = require('axios');
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const http = require('node:http');
 const https = require('node:https');

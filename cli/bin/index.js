@@ -6,7 +6,7 @@ const cliInfo = require("../package.json");
 
 program
   .name("deref")
-  .description("CLI interface for https://deref.gouravkhunger.me")
+  .description("CLI interface for https://deref.gourav.sh")
   .version(cliInfo["version"], '-v, --version');
 
 program
@@ -19,7 +19,7 @@ const options = program.opts();
 const url = options.url;
 const json = options.json ? true : false;
 
-axios.post("https://deref.gouravkhunger.me/api", new URLSearchParams({
+axios.post("https://deref.gourav.sh/api", new URLSearchParams({
   'link': url
 })).then((response) => {
   const data = response.data;

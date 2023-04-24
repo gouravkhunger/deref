@@ -1,7 +1,7 @@
 {
   "name": "deref-node-cli",
   "version": "1.0.0",
-  "description": "CLI interface for deref.gouravkhunger.me — nodejs based alternative to deref.link",
+  "description": "CLI interface for deref.gourav.sh — nodejs based alternative to deref.link",
   "main": "bin/index.js",
   "bin": {
     "deref": "./bin/index.js"
