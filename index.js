@@ -33,6 +33,7 @@ app.use('/', express.static('web', { extensions: ['html'] }));
 
 app.post('/api', async (req, res) => {
   let link = req.body && req.body.link;
+  let concise = req.body.concise ?? false;
 
   if (link === null || link === undefined || typeof link !== 'string' || link === '') {
     res.status(400).json({ message: "Please send a valid link to trace in request body!" });
@@ -62,6 +63,10 @@ app.post('/api', async (req, res) => {
     destination = (destination[0] == '/') ? (origin + destination) : destination;
     log.push(destination);
     url = destination;
+  }
+
+  if (concise === true || concise === "true") {
+    return res.send(log[log.length - 1]);
   }
 
   res.json({
