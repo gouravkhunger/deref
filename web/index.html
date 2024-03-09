@@ -10,20 +10,39 @@
   <meta name="twitter:description" content="A Simple Web interface to find a URL's redirection path without opening it." />
   <meta name="twitter:creator" content="@gourav_khunger" />
 
+  <link rel="stylesheet" href="/css/styles.min.css">
   <link rel="canonical" href="https://deref.gourav.sh" />
-
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Sen:wght@400..600&display=swap"
+    rel="stylesheet"
+  />  
   <title>Deref by Gourav Khunger</title>
 </head>
 <body>
   <main>
-    <form onsubmit="return false">
-      <input id="url-input" name="url" placeholder="Enter a URL" />
-      <button id="submit" type="submit">Go!</button>
-      <pre id="response"></pre>
+    <h1 class="title">Deref</h1>
+
+    <p class="description">
+      A Web interface to find a URL's redirection path without manually opening it.
+    </p>
+
+    <form class="form" onsubmit="return false">
+      <div class="input-container">
+        <input id="url-input" name="url" placeholder="Enter a URL" />
+        <button id="submit" type="submit">Go!</button>
+      </div>
+      <p id="success">
+        URL copied to clipboard!
+      </p>
+      <div class="response-container hidden">
+        <pre id="response"></pre>
+        <button id="copy-btn" class="hidden">Copy</button>
+      </div>
     </form>
 
-    <a href="https://github.com/gouravkhunger/deref" target="_blank">GitHub ></a>
+    <!-- <a href="https://github.com/gouravkhunger/deref" target="_blank">GitHub ></a> -->
   </main>
 
   <script src="/js/app.js"></script>

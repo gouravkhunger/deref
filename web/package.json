@@ -1,0 +1,16 @@
+{
+  "name": "deref-web-interface",
+  "version": "1.0.0",
+  "description": "A Web interface to find a URL's redirection path without manually opening it.",
+  "main": "index.html",
+  "scripts": {
+    "dev:css": "npx tailwindcss -i css/styles.css -o css/styles.min.css --watch",
+    "build:css": "npx tailwindcss -i css/styles.css -o css/styles.min.css --minify"
+  },
+  "keywords": [],
+  "author": "Gourav Khunger <gouravkhunger18@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
