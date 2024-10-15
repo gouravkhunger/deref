@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Simple API, web, and CLI interface to find a URL's redirection path without opening it.",
   "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gouravkhunger/deref.git"
