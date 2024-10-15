@@ -28,8 +28,6 @@ axios.post("https://deref.gourav.sh/api", new URLSearchParams({
     return;
   }
 
-  const pluralize = data.redirect_count == 1 ? "time" : "times";
-
   console.log(`Start url: ${data.start_url}`);
   console.log(`Final url: ${data.final_url}\n`);
 
